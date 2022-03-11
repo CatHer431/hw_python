@@ -4,8 +4,8 @@ def calculate_time(func):
   def wrapper():
     start = time.time()
     func()
-    runTime = time.time() - start 
-    print("Run Time: " + str(runTime))
+    finish = time.time()
+    print("Run Time: " + str(finish - start))
   return wrapper
 
 @calculate_time
