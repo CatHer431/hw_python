@@ -5,7 +5,8 @@ def calculate_time(func):
     start = time.time()
     func()
     finish = time.time()
-    print("Run Time: " + str(finish - start))
+    x = finish - start
+    print("Total time " + str(x))
   return wrapper
 
 @calculate_time
