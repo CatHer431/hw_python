@@ -1,7 +1,7 @@
 def func_counter(func):
- def wrapper(x):
+ def wrapper(y):
   wrapper.counter = wrapper.counter + 1
-  func(x)
+  func(y)
  wrapper.counter = 0
  return wrapper
 
